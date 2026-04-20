@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel's Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <!-- Devicon for Software Logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Font Awesome for other icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-active">
+
+    <!-- Intro Animation -->
+    <div id="intro-screen">
+        <div class="intro-shapes">
+            <div class="intro-shape shape-a"></div>
+            <div class="intro-shape shape-b"></div>
+        </div>
+        <div class="intro-content">
+            <div class="intro-text-wrapper">
+                <h1 class="intro-name">Agnes Angeline Grace <span style="color: var(--primary);">Lau</span></h1>
+            </div>
+            <div class="intro-loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header class="navbar">
+        <div class="logo">Agnes Angeline Grace <span>Lau</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero section-reveal">
+            <div class="hero-content">
+                <span class="greeting">Hello! I'm</span>
+                <h1 class="name">Angel</h1>
+                <h2 class="role">
+                    <span class="typewriter">Software Engineering Student</span><span class="cursor">|</span>
+                </h2>
+                <p class="bio">
+                    Welcome to my creative space. I'm a passionate Software Engineering (RPL) student dedicated to
+                    writing clean code, building beautiful interfaces, and solving real-world problems. Let's make
+                    something amazing together!
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary-btn">Say Hello <i class="fas fa-paper-plane"></i></a>
+                    <a href="#experience" class="btn secondary-btn">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="glass-orb"></div>
+                <img src="img/angel.jpg" alt="Angel avatar" class="hero-avatar">
+            </div>
+        </section>
+
+        <!-- Education History Section -->
+        <section id="education" class="section-reveal">
+            <h2 class="section-title">Education <span class="playful-accent">History</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Vocational High School (SMK) - SMKN 1 Bondowoso</h3>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Present</p>
+                        <p class="timeline-desc">Major in Software Engineering (Rekayasa Perangkat Lunak). Focusing on
+                            web development, programming fundamentals, and database management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Junior High School - SMPN 1 Grujugan</h3>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 - 2024</p>
+                        <p class="timeline-desc">Graduated with honors. Active in student council and extracurricular
+                            tech clubs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experience" class="section-reveal">
+            <h2 class="section-title">My <span class="playful-accent">Experiences</span></h2>
+            <div class="cards-container">
+                <div class="glass-card experience-card hover-effect">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development Project</h3>
+                    <p class="exp-date">Class Project</p>
+                    <p>Designed and developed front-end interfaces for an inventory management system using HTML, CSS,
+                        and basic JavaScript.</p>
+                </div>
+                <div class="glass-card experience-card hover-effect">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>UI Design</h3>
+                    <p class="exp-date">Class Project</p>
+                    <p>Designing UI for school projects, including web and mobile application interfaces.</p>
+                </div>
+                <div class="glass-card experience-card hover-effect">
+                    <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Olympiad Competition</h3>
+                    <p class="exp-date">Participant</p>
+                    <p>Participated in ESA Competition 12th by ESA FKIP UNEJ.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-reveal">
+            <h2 class="section-title">Software <span class="playful-accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-figma-plain colored skill-icon"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-canva-plain colored skill-icon"></i>
+                    <p>Canva</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-html5-plain colored skill-icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-css3-plain colored skill-icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-javascript-plain colored skill-icon"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-php-plain colored skill-icon"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-mysql-plain colored skill-icon"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-vscode-plain colored skill-icon"></i>
+                    <p>VS Code</p>
+                </div>
+                
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-python-plain colored skill-icon"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-laravel-plain colored skill-icon"></i>
+                    <p>Laravel</p>
+                </div>
+                <div class="skill-item glass-card hover-bounce">
+                    <i class="devicon-flutter-plain colored skill-icon"></i>
+                    <p>Flutter</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-reveal">
+            <h2 class="section-title">Get in <span class="playful-accent">Touch</span></h2>
+            <div class="contact-container glass-card">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing web projects, creative ideas, or opportunities to be part of your
+                        visions.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>angelineagnes25@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Bondowoso, East Java, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Grace25-n/" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/meangelele/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form"
+                    onsubmit="event.preventDefault(); alert('Message sent successfully! (Demo mode)');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Angel Portfolio. Crafted with ❤️ and Coffee.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
